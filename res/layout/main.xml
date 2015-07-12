@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0"
+    tools:context="com.asher.messagemaster.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:layout_marginTop="15dip"
+        android:id="@+id/send_message_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:text="@string/timing_message"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_gravity="center"
+        android:layout_height="1dip"
+        android:background="#2E8AF2"
+         />
+  
+
+    <TextView
+        android:id="@+id/message_log_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#fff"
+        android:text="@string/log"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</LinearLayout>
+

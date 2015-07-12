@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0"
+    android:weightSum="10" >
+
+    <ListView
+        android:id="@+id/message_task_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="9" >
+    </ListView>
+
+   <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:weightSum="2" >
+
+
+       <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/msg_task_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            bootstrap:bb_icon_left="fa-plus"
+            android:textSize="18sp"
+       		bootstrap:bb_type="success"
+            android:text="@string/msg_task_add" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:background="#F0F0F0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/edit_msg_send_time_layout"
+        android:layout_marginTop="8dip"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical|start"
+        android:weightSum="10"
+        android:background="#fff"
+        android:layout_height="60dip" >
+        <TextView
+            android:id="@+id/edit_msg_send_time"
+            android:layout_width="0dip"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|start"
+            android:textSize="18sp"
+            android:text="@string/edit_msg_time_default" />
+         <com.beardedhen.androidbootstrap.FontAwesomeText
+            android:id="@+id/edit_msg_send_time_btn"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            bootstrap:fa_icon="fa-chevron-right"  />
+        
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/edit_msg_to_whoe_layout"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical|start"
+        android:layout_marginTop="8dip"
+        android:layout_height="60dip"
+        android:background="#fff"
+        android:weightSum="10" >
+        <TextView
+            android:id="@+id/edit_msg_to_who"
+            android:layout_width="0dip"
+            android:textSize="18sp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_msg_to_who_default" />
+
+        <com.beardedhen.androidbootstrap.FontAwesomeText
+            android:id="@+id/edit_msg_to_who_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            bootstrap:fa_icon="fa-chevron-right" />
+
+    </LinearLayout>
+      <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/edit_msg_content"
+            android:layout_width="match_parent"
+            android:minHeight="70dip"
+            android:maxHeight="150dip"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_msg_content_default_hint"
+            bootstrap:be_roundedCorners="true"
+            bootstrap:be_state="info"
+            android:gravity="start|top"
+            android:layout_marginTop="8dip"
+             /> 
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/ok_btn"
+        bootstrap:be_roundedCorners="true"
+        bootstrap:bb_type="info"
+        android:layout_marginTop="8dip"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="OK" />
+
+</LinearLayout>
